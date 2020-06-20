@@ -17,4 +17,14 @@ for portx in range(1,100):
             print('[!] HIDDEN SERVICE FOUND: %s ~ %s' % (portx, r.decode('utf8'$
             s.close()
             break
+        else:
+            print('%s ~ %s' % (portx, r.decode('utf8')))
+    except socket.error as err:
+        print('%s ~ %s' % (portx, err))
+#port += 1000
+
+
+
+
+
 
